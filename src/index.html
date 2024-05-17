@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <nav class="flex justify-between  px-24 bg-gray-900 text-white font-semibold">
+        <nav class="hidden sm:flex justify-between px-24 bg-gray-900 text-white font-semibold">
             <div class=" flex gap-4 my-2">
                 <div class=" flex gap-1">
                     <h2>About the University</h2>
@@ -32,23 +32,28 @@
                    </div>
                </div>
            </nav>
-           <section class="flex justify-between  items-center bg-gray-200 h-28 px-24">
-<div>
-    <img src="./images/logo.svg" alt="" class="h-12">
-</div>
-<div class="flex  justify-between gap-7">
-    <h1 class="font-bold">STUDY</h1>
-    <h1 class="font-bold">RESEARCH</h1>
-    <h1 class="font-bold">INNOVATE</h1>
-    <h1 class="font-bold">LIVE</h1>
-    <h1 class="font-bold">EXPLORE</h1>
-    <div class="flex gap-4 border-b-2 border-black ">
-        <p>search</p>
-        <img src="./images/searching.svg" alt="" class="h-7">
-    </div>
-</div>
-
-           </section>
+           <section class="flex justify-between items-center bg-gray-200 h-28 px-4 sm:px-24">
+            <img src="./images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="md:hidden">
+            <div>
+                <img src="./images/logo.svg" alt="" class="h-12">
+            </div>
+            <img src="./images/menu-alt-right-regular-24.png" alt=""  class=" sm:block md:hidden ">
+            <div>
+        
+            <div class="hidden sm:flex justify-between gap-7">
+                <h1 class="font-bold">STUDY</h1>
+                <h1 class="font-bold">RESEARCH</h1>
+                <h1 class="font-bold">INNOVATE</h1>
+                <h1 class="font-bold">LIVE</h1>
+                <h1 class="font-bold">EXPLORE</h1>
+                <div class="flex gap-4 border-b-2 border-black">
+                    <p>search</p>
+                    <img src="./images/searching.svg" alt="" class="h-7">
+                </div>
+            </div>
+          
+        </section>
+        
     </header>
  <main>
     <section style="background-image: url(./images/estudantes-icbas-lab-2024.format-jpeg.jpg); background-size:cover "  class="h-[70vh] 
@@ -57,19 +62,28 @@
         <img src="./images/arrow_back_ios_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="bg-[#a18a4d]  p-3">
         <img src="./images/arrow_forward_ios_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="bg-[#a18a4d] p-3">
     </div>
-        <div class="bg-black bg-opacity-60  flex flex-col   justify-between absolute bottom-32 left-24 h-2/6 px-5 py-4 w-2/5">
-            <h1 class="text-white font-bold text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </h1>
-            <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor non natus, commodi deserunt, eos vitae architecto dolore sunt quis accusamus nobis assumenda quisquam fugit ratione neque est excepturi praesentium quod? </p>
-            <button class="bg-[#a18a4d] text-black px-2 py-1 w-1/4" > <h1>See More</h1></button>
+    <div class="bg-black bg-opacity-60 flex flex-col justify-between absolute bottom-0 left-0 w-full h-2/1 sm:h-auto sm:bottom-auto  sm:flex sm:w-full md:left-24 md:h-2/6 px-5 py-4  sm:h-1/3 sm:w-2/5">
+        <h1 class="text-white font-bold text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor non natus, commodi deserunt, eos vitae architecto dolore sunt quis accusamus nobis assumenda quisquam fugit ratione neque est excepturi praesentium quod?</p>
+        <button class="bg-[#a18a4d] text-black px-2 py-1 w-1/4">
+            <h1>See More</h1>
+        </button>
+    </div>
+    
+    </section>
+    <section class="flex-col justify-center mx-4 sm:m-32 border-b-2 border-gray-200">
+        <div class="flex flex-col justify-evenly gap-12 mb-12">
+            <div>
+                <h1 class="text-[#a18a4d] text-4xl sm:mt-12">Study</h1>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 justify-evenly">
+                <h1 class="text-3xl w-full sm:w-1/3">Your future is here!</h1>
+                <p class="text-center w-full sm:w-2/3">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
+            </div>
         </div>
     </section>
-    <section class="flex-col justify-center m-32  border-b-2 border-gray-200" >
-        <div  class=" flex flex-col justify-evenly gap-12 mb-12">
-            <div><h1 class="text-[#a18a4d] text-4xl" >Study</h1></div>
-            <div class="flex  gap-5 justify-evenly"><h1 class="  text-3xl w-1/3 ">Your future is here!</h1>
-            <p class="items center w-2/3">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market..</p></div>
-        </div>
-    </section>
+    
+
     <section class=" flex gap-14 mx-24   mb-24">
         <div  class="flex flex-col gap-4  w-3/4 ">
             <h1 class="  text-3xl font-semibold ">Which course are you looking for?</h1>
